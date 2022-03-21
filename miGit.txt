@@ -12,3 +12,9 @@
 4. Ver email y nombre de usuario
   - git config user.name
   - git config user.email
+5. Para preparar los documentos modificados
+  - git add "nombre archivo"
+6. Para hacer comit
+  - git comit -m "comentario"
+7.Para hacer un push
+  - git push "url"
