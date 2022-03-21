@@ -1,0 +1,9 @@
+
+
+1. Entramos en la carpeta
+2.1. Creamos un repositorio
+    -git int
+2.2. Clonar un repositorio
+    -git clone "url"
+2.3. Si nos encontramos en el repositorio
+    - ...
