@@ -1,20 +1,56 @@
 
+OJO: Para cambiar el usuario de un pc ir a credenciales.
+OJO: Para generar el token ir a Settings/Developer_settings/Personal_access_tokens
 
-1. Entramos en la carpeta
-2.1. Creamos un repositorio
-    -git int
-2.2. Clonar un repositorio
-    -git clone "url"
-2.3. Si nos encontramos en el repositorio
+1. Entramos en la carpeta.
+2.1. Creamos repositorio.
+    - git init
+2.2. Clonar un repositorio.
+    - git clone "url"
+2.3. Si nos encontrarnos en el repositorio.
     - ...
 3. Ver el estado del repositorio.
-  - git status
-4. Ver email y nombre de usuario
-  - git config user.name
-  - git config user.email
-5. Para preparar los documentos modificados
-  - git add "nombre archivo"
-6. Para hacer comit
-  - git comit -m "comentario"
-7.Para hacer un push
-  - git push "url"
+    - git status.
+4. Para preparar los documentos modificados:
+    - git add "nombreArchivo"
+4.1. Para prerparar todos los documentos modificados:
+    - git add
+5. Para hacer commit:
+    - git commit -m "cometario"
+6. Para subir a github:
+6.1. No está especificada la url (primera vez):
+    - git push "url"
+    - git remote -u origin "url"
+      git push -u origin "rama"
+6.2. Está especificada la url:
+    - git push
+7. Para ver el resgistro de commits:
+7.1. Vemos los commits (para salir q)
+    - git log
+7.2. Commits + detalle:
+    - git log -p
+7.3. Ver el último resgistro:
+    - git log -1
+8. Detalle de las modificaciones:
+    -git diff
+9. Ramas
+9.1. Mostrar Ramas
+    - git branch
+9.2. Crear rama
+    - git branch "nombre"
+9.3. Renombrar rama
+    - git branch -m "nombre"
+9.4. Eliminar rama (no puedo eliminar una rama si estoy en esa rama)
+    - git branch -d "nombre"
+    - git branch -D "nombre" //Fuerza la eliminacion
+9.5. Cambiar de Ramas
+    - git checkout "nombre"
+9.6. Pushear a github una Rama
+    - git push "url del repositorio donde vamos a crear la rama"
+10. Unir Ramas
+10.1. si solo se han hecho modificaciones en la rama "hijo"
+  - git merge "rama destino"
+10.2. si se han hecho modicficaciones tanto en la rama "padre" tanto en la rama "hijo"
+  - com¡piamos la info de la modicficaion del "hijo" en el "padre"
+  - y despues se elimina el "hijo"
+  - git fetch "url d ela ram que queremos copiar en la actualidad"
